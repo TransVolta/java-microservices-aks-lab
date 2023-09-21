@@ -4,8 +4,10 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/spring-petclinic/spring-petclinic-microservices-config
-          default-label: main
+          uri: https://github.com/TransVolta/spring-petclinic-microservices-config
+          username: TransVolta
+          password: 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
+          default-label: the-branch-name-in-case-you-will-not-be-using-the-main-branch
         # Use the File System Backend to avoid git pulling. Enable "native" profile in the Config Server.
         native:
           searchLocations: file:///${GIT_REPO}
